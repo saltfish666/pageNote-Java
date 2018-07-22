@@ -1,9 +1,2 @@
-# How to use
-
-compile: 
-    java com/libai688/pageNote 
-
-run:
-    java com.libai688.pageNote
-    java com/libai688/pageNote
-    java ./com/libai688/pageNote(error)
+# pageNote-Java
+brother of [pageNote-node](https://github.com/saltfish666/pageNote-Express)

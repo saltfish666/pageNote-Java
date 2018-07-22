@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "compile": "javac ./src/xyz/pagenote/Main.java -d ./java",
+    "exec": "java -classpath ./java xyz.pagenote.Main",
+    "run": "npm run compile && npm run exec"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

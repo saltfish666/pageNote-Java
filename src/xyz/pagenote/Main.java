@@ -1,4 +1,4 @@
-package com.libai688;
+package xyz.pagenote;
 
 import java.io.IOException;    
 import java.io.OutputStream;   
@@ -10,10 +10,9 @@ import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;   
 import com.sun.net.httpserver.HttpServer; 
 
-public class pageNote {
+public class Main {
 	public static void main(String[] args) throws IOException {
-		 try {  
-         
+		 try {
             int backLog = 10;  
             InetSocketAddress inetSock = new InetSocketAddress(8086);  
             HttpServer httpServer = HttpServer.create(inetSock, backLog);  
@@ -35,7 +34,7 @@ class HandlerTestA implements HttpHandler{
         httpExchange.sendResponseHeaders(200, responseString.length());     
         OutputStream os = httpExchange.getResponseBody();     
         os.write(responseString.getBytes());     
-        os.close();   
+        os.close(); 
     }    
 } 
 
